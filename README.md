@@ -3,6 +3,8 @@ node-printer
 
 [![Code Climate](https://codeclimate.com/github/alepee/node-printer/badges/gpa.svg)](https://codeclimate.com/github/alepee/node-printer)
 
+N.B.: Please take a look on [node-ipp-interface](https://github.com/alepee/node-ipp-interface) node module, it relies on IPP protocol and provide a more constistent way to communicate with a printer. (node-ipp-interface module is a WIP, please feel free to contribute)
+
 A tool to print document or data. Based on "lp" binary.   
 Supports complete set of lp options (http://unixhelp.ed.ac.uk/CGI/man-cgi?lp)
 
@@ -47,7 +49,7 @@ jobFromBuffer.once('sent', function() {
 
 ## Roadmap
 
-- [ ] Rewrite option factories
-- [ ] Remove dependency to underscorejs
-- [ ] Write more tests
-- [ ] Find a way to emulate CUPS printers on Travis env
+- Rewrite option factories
+- Remove dependency to underscorejs
+- Write more tests
+- Find a way to emulate CUPS printers on Travis env
