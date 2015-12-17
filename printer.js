@@ -360,6 +360,8 @@ Printer.prototype.printBuffer = function(data, options) {
   return job;
 };
 
+Printer.prototype.printText = Printer.prototype.printBuffer;
+
 Printer.prototype.printFile = function(filePath, options) {
   var self = this;
   var args = buildArgs(options);
