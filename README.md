@@ -3,7 +3,9 @@ node-printer
 
 [![Code Climate](https://codeclimate.com/github/alepee/node-printer/badges/gpa.svg)](https://codeclimate.com/github/alepee/node-printer)
 
-:warning: **This package should not be used as is**. It relies on STDOUT text parser and has not been tested for all version of CUPS! If you are looking for a way to manage and send data to printers take a look at [alepee/node-ipp-interface](https://github.com/alepee/node-ipp-interface) which relies on [IPP protocol RFC](https://tools.ietf.org/html/rfc2910) and provide a more constistent way to communicate with a printer. (node-ipp-interface module is a WIP, please feel free to contribute)
+:warning: **This package should not be used as is** :warning:
+
+It relies on STDOUT text parser and has not been tested for all version of CUPS! If you are looking for a way to manage and send data to printers take a look at [alepee/node-ipp-interface](https://github.com/alepee/node-ipp-interface) which relies on [IPP protocol RFC](https://tools.ietf.org/html/rfc2910) and provide a more constistent way to communicate with a printer. (node-ipp-interface module is a WIP, please feel free to contribute)
 
 ---
 
