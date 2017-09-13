@@ -1,15 +1,26 @@
 node-printer
-===============
+============
 
 [![Code Climate](https://codeclimate.com/github/alepee/node-printer/badges/gpa.svg)](https://codeclimate.com/github/alepee/node-printer)
 
-:warning: **This package should not be used as is** :warning:
+:warning: **This package should only be used for prototyping**
 
 It relies on STDOUT text parser and has not been tested for all version of CUPS! If you are looking for a way to manage and send data to printers take a look at [alepee/node-ipp-interface](https://github.com/alepee/node-ipp-interface) which relies on [IPP protocol RFC](https://tools.ietf.org/html/rfc2910) and provide a more constistent way to communicate with a printer. (node-ipp-interface module is a WIP, please feel free to contribute)
 
+Please note that the way I wrote this library as a prototype. It relies on STDOUT from CUPS binaries and is not trustable.
+
+The correct way to manage printers and jobs would be to use IPP protocol defined by RFCs. You can have a look at [alepee/node-ipp-interface](https://github.com/alepee/node-ipp-interface), it is based on it but still isn't finished yet. I can give you some help if needed to complete it.
+
+## Further reading about IPP
+- [RFC 2567](https://tools.ietf.org/html/rfc2567) – Design Goals for an Internet Printing Protocol
+- [RFC 2568](https://tools.ietf.org/html/rfc2568) – Rationale for the Structure and Model and Protocol for the Internet Printing Protocol
+- [RFC 2569](https://tools.ietf.org/html/rfc2569) – Mapping between LPD and IPP Protocols
+- [RFC 2910](https://tools.ietf.org/html/rfc2910) – Internet Printing Protocol/1.1: Encoding and Transport
+- [RFC 2911](https://tools.ietf.org/html/rfc2911) – Internet Printing Protocol/1.1: Model and Semantics
+
 ---
 
-A tool to print document or data. Based on "lp" binary.   
+A tool to print document or data. Based on "lp" binary STDOUT.   
 Supports complete set of lp options (http://unixhelp.ed.ac.uk/CGI/man-cgi?lp)
 
 Based on armetiz/node-printer-lp and diegoalberto/node-printer-lp-complete.
