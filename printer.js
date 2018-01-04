@@ -275,7 +275,7 @@ function Printer(name) {
   }
   self.name = name;
   self.jobs = [];
-  self.watch();
+  //self.watch();
 }
 
 Printer.list = function() {
@@ -328,7 +328,7 @@ Printer.prototype.watch = function() {
   });
 
   lpq.on('exit', function() {
-    self.watch();
+    //self.watch();
   });
 };
 
