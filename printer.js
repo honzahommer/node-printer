@@ -108,8 +108,7 @@ var oOptions = {
   'media': {
     'options': ['media'],
     'description': 'Sets  the  page  size  to size. Most printers support at least the size names "a4", "letter", and "legal".',
-    'expects': 'string',
-    'default': 'a4'
+    'expects': 'string'
   },
   'landscape': {
     'options': ['landscape'],
